@@ -7,15 +7,54 @@
     <title>Testimonials - Reverie</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 </head>
-<body>
+<style>
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
 
-    <header>
+::-webkit-scrollbar-track {
+    background: rgba(128, 0, 128, 0.1); /* Light purple background */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(128, 0, 128, 0.7); /* Purple thumb */
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(128, 0, 128, 0.9); /* Darker purple on hover */
+}
+
+/* Firefox scrollbar */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(128, 0, 128, 0.7) rgba(128, 0, 128, 0.1); /* Purple thumb and light purple track */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .journey-milestone {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .journey-image, .journey-content {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+</style>
+<body class="testimonial-page">
+
+    <header class="testimonial-page">
         <a href="index.html" class="brand"><img src="g5logo.png" alt="g5logo"></a>
         <div class="menu-btn">
             
         </div>
         <div class="navigation">
             <div class="navigation-items">
+                <a href="journey.html">Our Journey</a>
                 <a href="https://www.facebook.com/paulo.corpuz.12" target="_blank">Contact us</a>
                 
             </div>
@@ -23,7 +62,7 @@
     </header>
     
     <section class="testimonials-section">
-        <h1><span>Testimonials</span></h1>
+        <h1><span>Our Testimony</span></h1>
         
         <div class="testimonial-container">
             <!-- Testimonial 1 -->
@@ -37,7 +76,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p class="quote">"Thanks to Lifelabs, "</p>
+                        <p class="quote">"Thanks to Lifelabs, I have learned real-life skills like problem-solving and critical thinking."</p>
                     </div>
                     
                     <div class="testimonial-divider">
@@ -52,7 +91,8 @@
                             <p class="profile-name">Zee Festejo</p>
                             <p class="profile-title">Leader, Director, Lead Photographer, Lead Videographer, Lead Designer, Researcher</p>
                             <div class="profile-socials">
-                                <a href="https://www.instagram.com/zzoooooi/"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-twitch"></i></a>
                             </div>
                         </div>
                     </div>
@@ -70,7 +110,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p class="quote">"i love fiona"</p>
+                        <p class="quote">"Lifelabs has taught me a lot from learning how to code, to editing, to life skills like critical thinking, problem-solving, and collaboration."</p>
                     </div>
                     
                     <div class="testimonial-divider">
@@ -85,8 +125,8 @@
                             <p class="profile-name">Paulo Mikhael Corpuz</p>
                             <p class="profile-title">Encoder, Director, Photographer, Videographer, Researcher, Valorant Player</p>
                             <div class="profile-socials">
-                                <a href="https://www.instagram.com/_pao.oo_/"><i class="fab fa-instagram"></i></a>
-                                <a href="https://www.tiktok.com/@_pao.oo_?lang=en"><i class="fab fa-tiktok"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-discord"></i></a>
                             </div>
                         </div>
                     </div>
@@ -104,7 +144,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p class="quote">"miumulto ako ng damdamin ko"</p>
+                        <p class="quote">"Lifelabs has significantly impacted my life by improving my academic and personal skills."</p>
                     </div>
                     
                     <div class="testimonial-divider">
@@ -119,8 +159,8 @@
                             <p class="profile-name">Zac Inigo Barbacena</p>
                             <p class="profile-title">Editor, Photographer, Videographer, Researcher, Valorant Player</p>
                             <div class="profile-socials">
-                                <a href="https://www.instagram.com/indigoo875/"><i class="fab fa-instagram"></i></a>
-                                <a href="https://www.tiktok.com/@inigoo143?lang=en"><i class="fab fa-tiktok"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-tiktok"></i></a>
                             </div>
                         </div>
                     </div>
@@ -137,7 +177,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p class="quote">"baliw na baliw kay"</p>
+                        <p class="quote">"I wanna thank Lifelabs for giving me these applicable skills for the future."</p>
                     </div>
                     
                     <div class="testimonial-divider">
@@ -152,7 +192,8 @@
                             <p class="profile-name">Carl Henry Dumael</p>
                             <p class="profile-title">Designer, Photographer, Videographer, Researcher</p>
                             <div class="profile-socials">
-                                <a href="https://www.instagram.com/carlwfxs/"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-tiktok"></i></a>
                             </div>
                         </div>
                     </div>
@@ -169,7 +210,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p class="quote">"di gusto si ryoma"</p>
+                        <p class="quote">"Lifelabs wasn't the typical subject you see at other schools, it's what made it unique. It has taught me things that I didn't know I needed to learn."</p>
                     </div>
                     
                     <div class="testimonial-divider">
@@ -184,7 +225,8 @@
                             <p class="profile-name">Sabreena Sakkam</p>
                             <p class="profile-title">Designer, Photographer, Videographer, Researcher</p>
                             <div class="profile-socials">
-                                <a href="https://www.facebook.com/sabreena.sakkam.7"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-tiktok"></i></a>
                             </div>
                         </div>
                     </div>

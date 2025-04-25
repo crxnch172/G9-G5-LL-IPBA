@@ -21,15 +21,47 @@ p {
 
 header{
     z-index: 999;
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 200px;
+    padding: 1px 200px;
     transition: 0.5s ease;
+    background: #000000;
+}   
+
+.home-page {
+    background-color:#5a5a5a;
+}
+
+.testimonial-page {
+    background-color: #7D7098;
+}
+
+.journey-page {
+    background-color: #779870;
+}
+
+/* Testimonial page scrollbar */
+.testimonial-page ::-webkit-scrollbar-track {
+    background: rgba(128, 0, 128, 0.1); /* Light purple background */
+}
+
+.testimonial-page ::-webkit-scrollbar-thumb {
+    background: rgba(128, 0, 128, 0.7); /* Purple */
+    border-radius: 4px;
+}
+
+.testimonial-page ::-webkit-scrollbar-thumb:hover {
+    background: rgba(128, 0, 128, 0.9); /* Darker purple on hover */
+}
+
+/* Firefox scrollbar for testimonial page */
+.testimonial-page {
+    scrollbar-color: rgba(128, 0, 128, 0.7) rgba(128, 0, 128, 0.1);
 }
 
 header .brand{
@@ -38,6 +70,7 @@ header .brand{
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
+    max-width: 35%;
 }
 
 header .navigation{
@@ -57,7 +90,7 @@ header .navigation  .navigation-items  a{
 header .navigation  .navigation-items  a:before{
     content: '';
     position: absolute;
-    background: #CF9A4F;
+    background: #FFF;
     width: 0;
     height: 2px;
     bottom: 0;
@@ -602,4 +635,80 @@ section{
         background-position: center;
         transition: 0.3s ease;
     }
+}
+
+/* Journey tab */
+
+journey-page {
+    overflow: auto !important;
+}
+
+.journey-page .journey-section {
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.journey-section {
+    padding: 100px 5% 50px;
+    background: linear-gradient(135deg, #1a472a, #2e8b57);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.journey-section h1 {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.journey-socials {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 100;
+}
+
+.journey-socials a {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.journey-socials a:hover {
+    color: #4ade80;
+    transform: scale(1.2);
+}
+
+.journey-socials i {
+    font-size: 1.5rem;
+}
+
+/* Journey page scrollbar */
+.journey-page ::-webkit-scrollbar-thumb {
+    background: rgba(0, 128, 0, 0.7); /* Green */
+    border-radius: 4px;
+}
+
+.journey-page ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 128, 0, 0.9); /* Darker green on hover */
+}
+
+/* Firefox scrollbar for journey page */
+.journey-page {
+    scrollbar-color: rgba(0, 128, 0, 0.7) rgba(0, 0, 0, 0.1);
 }

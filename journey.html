@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Our Journey - Reverie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <style>
+        html, body {
+            overflow: hidden; 
+            height: 100%; 
+        }
+        .journey-section {
+            overflow-y: auto !important;
+            height: 100vh;
+            padding-bottom: 50px; 
+        }
+        
+        /* New Journey Layout Styles */
+        .journey-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .journey-milestone {
+            display: flex;
+            width: 100%;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .journey-image {
+            flex: 1;
+            max-width: 30%;
+            padding: 10px;
+        }
+        
+        .journey-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .journey-image img:hover {
+            transform: scale(1.05);
+        }
+        
+        .journey-content {
+            flex: 2;
+            max-width: 40%;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .journey-date {
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .journey-content h3 {
+            color: #fff;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .journey-content p {
+            color: #fff;
+            line-height: 1.6;
+            margin-bottom: 0;
+            border-top: none;
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .journey-milestone {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .journey-image, .journey-content {
+                max-width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style> 
+</head>
+<body class="journey-page">
+    <header class="journey-page">
+        <a href="index.html" class="brand"><img src="g5logo.png" alt="g5logo"></a>
+        <div class="menu-btn">
+            
+        </div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="testimonial.html">Testimonials</a>
+                <a href="https://www.facebook.com/paulo.corpuz.12" target="_blank">Contact us</a>
+                
+            </div>
+        </div>
+    </header>
+    
+    <section class="journey-section">
+        <h1><span>Our Journey</span></h1>
+        
+        <div class="journey-container">
+            <!-- Milestone 1 -->
+            <div class="journey-milestone">
+                <div class="journey-image left-image">
+                    <img src="journey1.png" alt="Journey 1">
+                </div>
+                <div class="journey-content">
+                    <div class="journey-date">September 2024</div>
+                    <h3>Just getting started</h3>
+                    <p>At the start, we we're just a bunch of students thrown together in a group who has different vibes, different strengths, figuring things out. But as the journey goes, we all started clicking, from awkward silences, to random laughters, to "Ano ulit gagawin natin?" moments. It wasn't perfect, but we were finding our groove.</p>
+                </div>
+                <div class="journey-image right-image">
+                    <!-- <img src="journey2.jpg" alt="The Beginning Right"> -->
+                </div>
+            </div>
+            
+            <!-- Milestone 2 -->
+            <div class="journey-milestone">
+                <div class="journey-image left-image">
+                    <!-- <img src="journey2.png" alt="Journey 2"> -->
+                </div>
+                <div class="journey-content">
+                    <div class="journey-date">November 2024</div>
+                    <h3>Figuring things out</h3>
+                    <p>At this point, Reverie was established and we started to find our groove, kind of. We figured out that all of us have different strengths, some of us were good at organizing stuff, some good at brainstorming, some at coding. It wasn't smooth sailing though, we still had bumps along the way. It was messy at times, but we were definitely getting there. </p>
+                </div>
+                <div class="journey-image right-image">
+                    <img src="journey2.png" alt="Journey 2">
+                </div>
+            </div>
+            
+            <!-- Milestone 3 -->
+            <div class="journey-milestone">
+                <div class="journey-image left-image">
+                    <img src="journey3.png" alt="Journey 3">
+                </div>
+                <div class="journey-content">
+                    <div class="journey-date">January 2025</div>
+                    <h3>On A Roll</h3>
+                    <p>By now, we were really starting to pick up speed. Things felt challenging, but we were getting into a rhythm. Ideas came in easy, everyone knew what they had to do, and we started to make real progress. The teamwork was smoother and there was a real sense that we were making something good together.</p>
+                </div>
+                <div class="journey-image right-image">
+                    <!-- <img src="journey3.png" alt="Journey 3"> -->
+                </div>
+            </div>
+            
+            <!-- Milestone 4 -->
+            <div class="journey-milestone">
+                <div class="journey-image left-image">
+                    <!-- <img src="journey7.jpg" alt="The Journey Continues Left"> -->
+                </div>
+                <div class="journey-content">
+                    <div class="journey-date">April 2025</div>
+                    <h3>Full Speed Ahead</h3>
+                    <p>As we reached the finish line, it was unbelievable how far we've come. It's just not about the tasks we made or completed, but the journey we just went through. It might have ended, but the memories and lessons we shared would stay with us.
+                    </p>
+                </div>
+                <div class="journey-image right-image">
+                    <img src="journey4.png" alt="Journey 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="media-icons journey-socials">
+        <a href="https://www.facebook.com/profile.php?id=61560402406906" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/_reverie.val_" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@reverie0411?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.youtube.com/channel/UCWn8k9ymQq1C-prlSOjQPqQ" target="_blank"><i class="fab fa-youtube"></i></a>    
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
